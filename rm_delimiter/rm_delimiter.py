@@ -1,4 +1,3 @@
-
 # パッケージのインポート
 import pandas as pd
 from pathlib import Path
@@ -13,7 +12,7 @@ def rm_delimiter(delimiter,inputfile,outputfile):
         excelpath = Path(inputfile)
         df = pd.read_excel(excelpath,dtype=str,usecols=['key','target'])
     except ValueError:
-        print('読み込み時にエラー！処理データの列名が正しくありません サンプルデータを参考にして列名を決めてください')
+        print('読み込み時にエラー！処理データが正しくありません サンプルデータを参考にして修正してください')
         return False
 
     # 格納先リストの定義
