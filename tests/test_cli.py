@@ -1,9 +1,11 @@
-
+#%% 
 # パッケージのインポート
 import pandas as pd
 from pathlib import Path
 import PySimpleGUI as sg
 
+
+#%%
 
 # 区切り文字排除関数の定義
 def rm_delimiter(delimiter,inputfile,outputfile):
@@ -89,3 +91,4 @@ def test_main():
             break
 
     window.close()
+# %%
